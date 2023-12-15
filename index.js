@@ -12,7 +12,7 @@ app.use(express.json())
 
 app.use(cors({origin:"*"}))
 app.get("/", (req,res)=>{
-    res.json({message:"Hello"})
+    res.json({message:"Server is running fine!"})
 })
 
 app.post("/register", async(req, res)=>{
